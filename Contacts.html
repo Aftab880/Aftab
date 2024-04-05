@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black */
+            color: #fff; /* White text */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            color: #343a40; /* Dark Gray */
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: slideInDown 1s ease-in-out;
+        }
+        .contact-info {
+            background-color: #333; /* Dark Gray */
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            animation: zoomIn 1s ease-in-out;
+            transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        .contact-info:hover {
+            background-color: #D4AF37; /* Metallic Yellow */
+            transform: scale(1.1);
+        }
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes slideInDown {
+            0% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            0% { transform: scale(0.5); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info" onclick="location.href='tel:8805583424';">
+        <p>Mobile No: 8805583424</p>
+    </div>
+    <div class="contact-info" onclick="location.href='mailto:imailaftab88@gmail.com';">
+        <p>Email: imailaftab88@gmail.com</p>
+    </div>
+    <div class="contact-info">
+        <p>Address: Shrirampur, Dist. Ahmednagar</p>
+    </div>
+</div>
+
+</body>
+</html>

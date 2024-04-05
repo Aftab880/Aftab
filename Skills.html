@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .skill-block {
+            background-color: #D4AF37; /* Metallic Yellow color */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            animation: skillAnimation 1s ease-in-out;
+        }
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .progress-bar {
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress {
+            height: 100%;
+            background-color: #333;
+            border-radius: 10px;
+            animation: progressAnimation 2s ease-in-out;
+        }
+        @keyframes progressAnimation {
+            0% { width: 0%; }
+        }
+        @keyframes skillAnimation {
+            0% { transform: translateY(-20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        @media (max-width: 768px) {
+            .skill-block {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Skills</h2>
+
+    <div class="skill-block">
+        <div class="skill-name">HTML</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-block">
+        <div class="skill-name">CSS</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-block">
+        <div class="skill-name">JavaScript</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-block">
+        <div class="skill-name">Java</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+    <div class="skill-block">
+        <div class="skill-name">Bootstrap</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-block">
+        <div class="skill-name">SQL</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+    <div class="skill-block">
+        <div class="skill-name">MongoDB</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <div class="skill-block">
+        <div class="skill-name">Spring</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+    <div class="skill-block">
+        <div class="skill-name">Hibernate</div>
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+    </div>
+
+    <!-- Add more skill blocks as needed -->
+
+</div>
+
+</body>
+</html>
